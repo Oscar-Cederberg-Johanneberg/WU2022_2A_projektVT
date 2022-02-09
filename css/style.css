@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: flex end;
+    align-items: center;
+    background-color: red;
+    grid-area: na;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    background-color: blue;
+    position: absolute;
+    right: 0px;
+    top: -90vh;
+    width: 200px;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+.nav-active {
+    transform: translateY(100vh);
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: aqua;
+    letter-spacing: 0.1875rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    width: 200px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links a:hover {
+    color: darkblue;
+    background-color: brown;
+    transition: ease 0.4s;
+}
+
+.burger_line {
+    width: 25px;
+    height: 3px;
+    background-color: orange;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.5s;
+}
+
+.crossed_line #line_2 {
+    opacity: 0;
+}
+
+.crossed_line #line_1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.crossed_line #line_3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+#burger {
+    margin-right: 87.5px;
+    cursor: pointer;
+}
+
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 200px;
+    grid-template-rows:100px 1fr 100px;
+    grid-template-areas:
+    "he" "na"
+    "ss" "ss"
+    "fo" "fo"
+
+    ;
+
+}
+
+header {
+    grid-area: he;
+    background: green;
+    padding: 16px;
+}
+
+#start_section {
+    grid-area: ss;
+    background: purple;
+}
+
+footer {
+    grid-area: fo;
+    background: gray;
+}
+
+#img_startsida {
+position: relative;
+height: auto;
+width: auto;
+}
+
+@media screen and (min-width: 800px) {
+
+    #burger {
+        display: none;
+    }
+
+    #grid_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas:
+        "he" "na"
+        "ss" "ss"
+        "fo" "fo"
+        ;
+    }
+
+    #nav-links {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color:lightpink;
+        position: absolute;
+        left: 0px;
+        top: 100px;
+        width: 100%;
+    }
+
+    #img_startsida {
+    }
+
+    .nav-active {
+        transform:none;
+    }
+
+    
+}
