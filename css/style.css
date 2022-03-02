@@ -102,7 +102,58 @@ footer {
 
 #img_startsida {
     height: auto;
-    width: auto;
+    width: 100vw;
+}
+
+#pieces_wrapper{
+    grid-area: ss;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "kb kt"
+    "qb qt"
+    "rb rt"
+    "bb bt"
+    "hb ht"
+    "pb pt"
+    ;
+}
+#king_bild {
+    grid-area: kb;
+}
+#king_text {
+    grid-area: kt;
+}
+#queen_bild {
+    grid-area: qb;
+}
+#queen_text {
+    grid-area: qt;
+}
+#rook_bild {
+    grid-area: rb;
+}
+#rook_text {
+    grid-area: rt;
+}
+#bishop_bild {
+    grid-area: bb;
+}
+#bishop_text {
+    grid-area: bt;
+}
+#horse_bild {
+    grid-area: hb;
+}
+#horse_text {
+    grid-area: ht;
+}
+#pawn_bild {
+    grid-area: pb;
+}
+#pawn_text {
+    grid-area: pt;
 }
 
 @media screen and (min-width: 800px) {
@@ -120,7 +171,7 @@ footer {
         justify-content: space-around;
         align-items: center;
         height: 100px;
-        background-color: lightpink;
+        background-color: orange;
         position: absolute;
         left: 0px;
         top: 100px;
@@ -128,6 +179,8 @@ footer {
     }
     #img_startsida {
         top: 100px;
+        width: 100vw;
+        height: auto;
     }
     .nav-active {
         transform: none;
