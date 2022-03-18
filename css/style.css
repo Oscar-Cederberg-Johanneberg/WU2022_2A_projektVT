@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: black;
 }
 
 nav {
@@ -164,6 +163,7 @@ footer {
 
 .pieces {
     background-color: blueviolet;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,6 +172,66 @@ footer {
 .pieces_bilder {
     height: 50%;
     width: auto;
+}
+
+#strategier_wrapper{
+    grid-area: ss;
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "op op" 
+    "bo to" 
+    "mg mg" 
+    "bm tm" 
+    "eg eg" 
+    "be te" 
+    ;
+}
+
+#openings{
+grid-area: op;
+}
+
+#bild_opening{
+grid-area: bo;
+}
+
+#text_opening{
+    grid-area: to;
+}
+
+#mid_game{
+    grid-area: mg;
+}
+
+#bild_mid{
+    grid-area: bm;
+}
+
+#text_mid{
+    grid-area: tm;
+}
+
+#end_game{
+    grid-area: eg;
+}
+
+#bild_end{
+    grid-area: be;
+}
+
+#text_end{
+    grid-area: te;
+}
+
+.strategier {
+    background-color: blueviolet;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -218,6 +278,23 @@ footer {
         "bb bt"
         "hb ht"
         "pb pt"
+        ;
+    }
+
+    #strategier_wrapper{
+        grid-area: ss;
+        display: grid;
+        width: 100vw;
+        margin-top: 100px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "op op" 
+        "bo to" 
+        "mg mg" 
+        "bm tm" 
+        "eg eg" 
+        "be te" 
         ;
     }
 }
