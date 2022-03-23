@@ -83,25 +83,21 @@ nav {
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-areas: "he na" "ss ss" "fo fo";
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "he na" "ss ss";
 }
 
 header {
     grid-area: he;
     background: green;
-    padding: 0px;
-    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #start_section {
     grid-area: ss;
     background: purple;
-}
-
-footer {
-    grid-area: fo;
-    background: gray;
 }
 
 #img_startsida {
@@ -112,9 +108,9 @@ footer {
 #pieces_wrapper{
     grid-area: ss;
     display: grid;
-    margin: 20px;
+    margin: 30px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
     grid-template-areas: 
     "kb kt"
     "qb qt"
@@ -170,7 +166,7 @@ footer {
 }
 
 .pieces_bilder {
-    height: 50%;
+    height: 80%;
     width: auto;
 }
 
@@ -179,7 +175,7 @@ footer {
     display: grid;
     margin: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 100px 200px 100px 200px;
     grid-template-areas: 
     "op op" 
     "bo to" 
@@ -196,10 +192,18 @@ grid-area: op;
 
 #bild_opening{
 grid-area: bo;
+margin-bottom: 20px;
 }
+
+.strategier_bilder {
+height: 100%;
+width: auto;
+margin-bottom: 20px;
+    }
 
 #text_opening{
     grid-area: to;
+    margin-bottom: 20px;
 }
 
 #mid_game{
@@ -208,10 +212,12 @@ grid-area: bo;
 
 #bild_mid{
     grid-area: bm;
+    margin-bottom: 20px;
 }
 
 #text_mid{
     grid-area: tm;
+    margin-bottom: 20px;
 }
 
 #end_game{
@@ -234,6 +240,7 @@ grid-area: bo;
     align-items: center;
 }
 
+
 @media screen and (min-width: 800px) {
     #burger {
         display: none;
@@ -241,8 +248,8 @@ grid-area: bo;
     #grid_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 1fr 100px;
-        grid-template-areas: "he" "na" "ss" "ss" "fo" "fo";
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: "he" "na" "ss" "ss";
     }
     #nav-links {
         flex-direction: row;
