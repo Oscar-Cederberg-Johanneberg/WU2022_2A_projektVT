@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-}
+body {}
 
 nav {
     display: flex;
@@ -105,60 +104,65 @@ header {
     width: 100vw;
 }
 
-#pieces_wrapper{
+#pieces_wrapper {
     grid-area: ss;
     display: grid;
     margin: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px 200px 200px 200px 200px;
-    grid-template-areas: 
-    "kb kt"
-    "qb qt"
-    "rb rt"
-    "bb bt"
-    "hb ht"
-    "pb pt"
-    ;
+    grid-template-areas: "kb kt" "qb qt" "rb rt" "bb bt" "hb ht" "pb pt";
 }
+
 #king_bild {
     grid-area: kb;
 }
+
 #king_text {
     grid-area: kt;
 }
+
 #queen_bild {
     grid-area: qb;
 }
+
 #queen_text {
     grid-area: qt;
 }
+
 #rook_bild {
     grid-area: rb;
 }
+
 #rook_text {
     grid-area: rt;
 }
+
 #bishop_bild {
     grid-area: bb;
 }
+
 #bishop_text {
     grid-area: bt;
 }
+
 #horse_bild {
     grid-area: hb;
 }
+
 #horse_text {
     grid-area: ht;
 }
+
 #pawn_bild {
     grid-area: pb;
 }
+
 #pawn_text {
     grid-area: pt;
 }
 
 .pieces {
-    background-color: blueviolet;
+    background-color: rgb(43, 226, 165);
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -170,65 +174,58 @@ header {
     width: auto;
 }
 
-#strategier_wrapper{
+#strategier_wrapper {
     grid-area: ss;
     display: grid;
     margin: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 200px 100px 200px 100px 200px;
-    grid-template-areas: 
-    "op op" 
-    "bo to" 
-    "mg mg" 
-    "bm tm" 
-    "eg eg" 
-    "be te" 
-    ;
+    grid-template-areas: "op op" "bo to" "mg mg" "bm tm" "eg eg" "be te";
 }
 
-#openings{
-grid-area: op;
+#openings {
+    grid-area: op;
 }
 
-#bild_opening{
-grid-area: bo;
-margin-bottom: 20px;
+#bild_opening {
+    grid-area: bo;
+    margin-bottom: 20px;
 }
 
 .strategier_bilder {
-height: 100%;
-width: auto;
-margin-bottom: 20px;
+    height: 100%;
+    width: auto;
+    margin-bottom: 20px;
 }
 
-#text_opening{
+#text_opening {
     grid-area: to;
     margin-bottom: 20px;
 }
 
-#mid_game{
+#mid_game {
     grid-area: mg;
 }
 
-#bild_mid{
+#bild_mid {
     grid-area: bm;
     margin-bottom: 20px;
 }
 
-#text_mid{
+#text_mid {
     grid-area: tm;
     margin-bottom: 20px;
 }
 
-#end_game{
+#end_game {
     grid-area: eg;
 }
 
-#bild_end{
+#bild_end {
     grid-area: be;
 }
 
-#text_end{
+#text_end {
     grid-area: te;
 }
 
@@ -239,7 +236,6 @@ margin-bottom: 20px;
     justify-content: center;
     align-items: center;
 }
-
 
 @media screen and (min-width: 800px) {
     #burger {
@@ -259,7 +255,7 @@ margin-bottom: 20px;
         background-color: orange;
         position: absolute;
         top: 100px;
-        width: 100%;
+        width: 100vw;
     }
     #img_startsida {
         margin-top: 80px;
@@ -270,38 +266,27 @@ margin-bottom: 20px;
     .nav-active {
         transform: none;
     }
-
-    #pieces_wrapper{
+    #pieces_wrapper {
         grid-area: ss;
         display: grid;
         width: 100vw;
-        margin-top: 100px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px;
-        grid-template-areas: 
-        "kb kt"
-        "qb qt"
-        "rb rt"
-        "bb bt"
-        "hb ht"
-        "pb pt"
-        ;
+        margin: 0px;
+        margin-top: 80px;
+        grid-template-columns: 200px 1fr 200px 1fr;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas: "kb kt qb qt" "rb rt bb bt" "hb ht pb pt";
     }
-
-    #strategier_wrapper{
+    .center_the_pieces_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    #strategier_wrapper {
         grid-area: ss;
         display: grid;
         width: 100vw;
         margin-top: 100px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "op op" 
-        "bo to" 
-        "mg mg" 
-        "bm tm" 
-        "eg eg" 
-        "be te" 
-        ;
+        grid-template-areas: "op op" "bo to" "mg mg" "bm tm" "eg eg" "be te";
     }
 }
