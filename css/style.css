@@ -255,16 +255,16 @@ margin-bottom: 20px;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        height: 100px;
+        height: 80px;
         background-color: orange;
         position: absolute;
-        left: 0px;
         top: 100px;
         width: 100%;
     }
     #img_startsida {
+        margin-top: 80px;
         top: 100px;
-        width: 100vw;
+        width: 99vw;
         height: auto;
     }
     .nav-active {
@@ -277,7 +277,7 @@ margin-bottom: 20px;
         width: 100vw;
         margin-top: 100px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
         grid-template-areas: 
         "kb kt"
         "qb qt"
