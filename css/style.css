@@ -4,13 +4,24 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+background-color: #1e383c;
+}
+
+p {
+    color: #f6f8fa;
+}
+
+h1 {
+    color: #f6f8fa;
+    font-size: 2rem;
+}
 
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: red;
+    background-color: #c3ccd3;
     grid-area: na;
 }
 
@@ -20,7 +31,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 90vh;
-    background-color: rgb(25, 0, 255);
+    background-color: #1e383c;
     position: absolute;
     right: 0px;
     top: -90vh;
@@ -35,7 +46,7 @@ nav {
 
 #nav-links a {
     text-decoration: none;
-    color: aqua;
+    color: #f6f8fa;
     letter-spacing: 0.1875rem;
     font-weight: bold;
     font-size: 1.25rem;
@@ -48,15 +59,14 @@ nav {
 }
 
 #nav-links a:hover {
-    color: darkblue;
-    background-color: brown;
+    background-color: #47646f;
     transition: ease 0.4s;
 }
 
 .burger_line {
     width: 25px;
     height: 3px;
-    background-color: orange;
+    background-color:#1e383c;
     margin: 5px;
     border-radius: 10%;
     transition: all 0.5s;
@@ -88,15 +98,19 @@ nav {
 
 header {
     grid-area: he;
-    background: green;
+    background-color: #c3ccd3;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#club_name{
+    color: #1e383c;
+}
+
 #start_section {
     grid-area: ss;
-    background: purple;
+    background-color: #1e383c;
 }
 
 #img_startsida {
@@ -115,58 +129,88 @@ header {
 
 #king_bild {
     grid-area: kb;
+    margin-bottom: 2.5px;
 }
 
 #king_text {
     grid-area: kt;
+    margin-bottom: 2.5px;
 }
 
 #queen_bild {
     grid-area: qb;
+    background-color: #47646f;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
 }
 
 #queen_text {
     grid-area: qt;
+    background-color: #47646f;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
 }
 
 #rook_bild {
     grid-area: rb;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
 }
 
 #rook_text {
     grid-area: rt;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
 }
 
 #bishop_bild {
     grid-area: bb;
+    background-color: #47646f;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
 }
 
 #bishop_text {
     grid-area: bt;
+    background-color: #47646f;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
 }
 
 #horse_bild {
     grid-area: hb;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
 }
 
 #horse_text {
     grid-area: ht;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
 }
 
 #pawn_bild {
     grid-area: pb;
+    background-color: #47646f;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
 }
 
 #pawn_text {
     grid-area: pt;
+    background-color: #47646f;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
 }
 
 .pieces {
-    background-color: rgb(43, 226, 165);
+    background-color: #8ea6b2;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding-right: 1.5rem;
 }
 
 .pieces_bilder {
@@ -252,7 +296,7 @@ header {
         justify-content: space-around;
         align-items: center;
         height: 80px;
-        background-color: orange;
+        background-color: ##1e383c;
         position: absolute;
         top: 100px;
         width: 100vw;
@@ -276,6 +320,89 @@ header {
         grid-template-rows: 300px 300px 300px;
         grid-template-areas: "kb kt qb qt" "rb rt bb bt" "hb ht pb pt";
     }
+
+    .pieces {
+    }
+
+    #king_bild {
+        grid-area: kb;
+        margin-bottom: 5px;
+    }
+    
+    #king_text {
+        grid-area: kt;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    #queen_bild {
+        grid-area: qb;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+    
+    #queen_text {
+        grid-area: qt;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    #rook_bild {
+        grid-area: rb;
+        background-color: #47646f;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    #rook_text {
+        grid-area: rt;
+        background-color: #47646f;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    #bishop_bild {
+        grid-area: bb;
+        background-color: #8ea6b2;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    #bishop_text {
+        grid-area: bt;
+        background-color: #8ea6b2;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    #horse_bild {
+        grid-area: hb;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    #horse_text {
+        grid-area: ht;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    } 
+
+    #pawn_bild {
+        grid-area: pb;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    
+    #pawn_text {
+        grid-area: pt;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
     .center_the_pieces_wrapper {
         display: flex;
         justify-content: center;
@@ -286,7 +413,14 @@ header {
         width: 100vw;
         margin-top: 100px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80px 400px 80px 400px 80px 400px;
         grid-template-areas: "op op" "bo to" "mg mg" "bm tm" "eg eg" "be te";
     }
+
+    #openings {
+        grid-area: op;
+        margin-right: 50vh;
+        margin-left: 50vh;
+    }
+
 }
