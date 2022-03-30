@@ -25,7 +25,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #c3ccd3;
+    background-color: #8ea6b2;
     grid-area: na;
 }
 
@@ -102,7 +102,7 @@ nav {
 
 header {
     grid-area: he;
-    background-color: #abb3bb;
+    background-color: #8ea6b2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,6 +122,25 @@ header {
     height: auto;
     width: 100vw;
 }
+
+#start_section{
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.start_text{
+    margin-top: 2rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    text-align: center;
+}
+
+.start_text2 {
+    margin-bottom: 40px;
+}
+
 
 #pieces_wrapper {
     grid-area: ss;
@@ -228,21 +247,27 @@ header {
     display: grid;
     margin: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 200px 100px 200px 100px 200px;
+    grid-template-rows: 70px 200px 70px 200px 70px 200px;
     grid-template-areas: "op op" "bo to" "mg mg" "bm tm" "eg eg" "be te";
+}
+
+.rubriker_stratergier {
+    color: #1e383c;
 }
 
 #openings {
     grid-area: op;
+    background-color: #8ea6b2;
 }
 
 #bild_opening {
     grid-area: bo;
     margin-bottom: 20px;
+    background-color: #47646f;
 }
 
 .strategier_bilder {
-    height: 100%;
+    height: 24vw;
     width: auto;
     margin-bottom: 20px;
 }
@@ -250,40 +275,48 @@ header {
 #text_opening {
     grid-area: to;
     margin-bottom: 20px;
+    background-color: #47646f;
 }
 
 #mid_game {
     grid-area: mg;
+    background-color: #8ea6b2;
+    
 }
 
 #bild_mid {
     grid-area: bm;
     margin-bottom: 20px;
+    background-color: #47646f;
 }
 
 #text_mid {
     grid-area: tm;
     margin-bottom: 20px;
+    background-color: #47646f;
 }
 
 #end_game {
     grid-area: eg;
+    background-color: #8ea6b2;
 }
 
 #bild_end {
     grid-area: be;
+    background-color: #47646f;
 }
 
 #text_end {
     grid-area: te;
+    background-color: #47646f;
 }
 
 .strategier {
-    background-color: blueviolet;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -439,14 +472,12 @@ header {
         width: 100vw;
         margin-top: 100px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 80px 400px 80px 400px 80px 400px;
+        grid-template-rows: 80px 500px 80px 500px 80px 500px;
         grid-template-areas: "op op" "bo to" "mg mg" "bm tm" "eg eg" "be te";
+        margin: 0%;
     }
 
     #openings {
         grid-area: op;
-        margin-right: 50vh;
-        margin-left: 50vh;
     }
-
 }
