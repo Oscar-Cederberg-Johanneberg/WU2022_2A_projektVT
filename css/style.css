@@ -479,5 +479,6 @@ header {
 
     #openings {
         grid-area: op;
+        margin-top: 100px;
     }
 }
