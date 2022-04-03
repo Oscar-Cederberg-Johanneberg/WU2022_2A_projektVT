@@ -141,11 +141,14 @@ header {
     margin-bottom: 40px;
 }
 
-
-#pieces_wrapper {
+#center_pieces{
     grid-area: ss;
+    display: flex;
+    justify-content: center;
+}
+#pieces_wrapper {
     display: grid;
-    margin: 30px;
+    width: 90vw;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6,200px);
     grid-template-areas: "kb kt" "qb qt" "rb rt" "bb bt" "hb ht" "pb pt";
@@ -242,8 +245,13 @@ header {
     width: auto;
 }
 
+#center_strategier{
+        grid-area: ss;
+        display: flex;
+        justify-content: center;
+    }
+
 #strategier_wrapper {
-    grid-area: ss;
     display: grid;
     margin: 20px;
     grid-template-columns: 1fr 1fr;
@@ -370,11 +378,10 @@ header {
         transform: none;
     }
     #pieces_wrapper {
-        grid-area: ss;
         display: grid;
-        width: 100vw;
-        margin: 0px;
+        width: 80vw;
         margin-top: 80px;
+        margin-bottom: 20px;
         grid-template-columns: 200px 1fr 200px 1fr;
         grid-template-rows: 300px 300px 300px;
         grid-template-areas: "kb kt qb qt" "rb rt bb bt" "hb ht pb pt";
@@ -466,19 +473,19 @@ header {
         display: flex;
         justify-content: center;
     }
+
+    
     #strategier_wrapper {
-        grid-area: ss;
         display: grid;
-        width: 100vw;
-        margin-top: 100px;
+        width: 80vw;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 80px 500px 80px 500px 80px 500px;
         grid-template-areas: "op op" "bo to" "mg mg" "bm tm" "eg eg" "be te";
-        margin: 0%;
+        margin-top: 100px;
     }
 
     #openings {
         grid-area: op;
-        margin-top: 100px;
     }
+
 }
