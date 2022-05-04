@@ -130,11 +130,6 @@ header {
     justify-content: center;
 }
 
-#start_section {
-    background-color: #47646f;
-    width: 90vw;
-}
-
 #img_startsida {
     height: auto;
     width: 80vw;
@@ -145,6 +140,8 @@ header {
     flex-direction: column; 
     align-items:center;
     justify-content: space-evenly;
+    background-color: #47646f;
+    width: 90vw;
 }
 
 .start_text{
@@ -344,6 +341,42 @@ header {
     text-align: center;
 }
 
+#center_om_oss{
+    grid-area: ss;
+    display: flex;
+    justify-content: center;
+}
+
+#om_oss_section{
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+    justify-content: space-evenly;
+    background-color: #47646f;
+    width: 90vw;
+}
+
+#img_om_oss {
+    height: auto;
+    width: 80vw;
+}
+
+.om_oss_text{
+    margin-top: 2rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    text-align: center;
+}
+
+.historia_text {
+    margin-bottom: 2.5rem;
+}
+
+.hitta_oss_text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width: 800px) {
     
     p{
@@ -377,6 +410,8 @@ header {
         flex-direction: column; 
         align-items:center;
         justify-content: space-evenly;
+        width: 80vw;
+        margin-top: 6.25rem;
     }
 
     .start_text{
@@ -390,10 +425,6 @@ header {
         margin-bottom: 2.5rem;
     }
 
-    #start_section{
-        width: 80vw;
-        margin-top: 6.25rem;
-    }
     #img_startsida {
         margin-top: 1.25rem;
         width: 70vw;
@@ -509,10 +540,38 @@ header {
         grid-area: op;
     }
 
+    #om_oss_section{
+        display: flex;
+        flex-direction: column; 
+        align-items:center;
+        justify-content: space-evenly;
+        width: 80vw;
+        margin-top: 6.25rem;
+    }
+    #img_om_oss {
+        margin-top: 1.25rem;
+        width: 70vw;
+        height: auto;
+    }
+
+    .om_oss_text{
+        margin-top: 2rem;
+        margin-right: 8rem;
+        margin-left: 8rem;
+        text-align: center;
+    }
+
+    .historia_text {
+        margin-bottom: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 1100px){
     #img_startsida {
+        width: 770px;
+    }
+
+    #img_om_oss{
         width: 770px;
     }
 }
