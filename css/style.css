@@ -270,7 +270,7 @@ header {
     margin: 1.25rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 70px 200px 70px 200px 70px 200px;
-    grid-template-areas: "op op" "bo to" "mg mg" "bm tm" "eg eg" "be te";
+    grid-template-areas: "op op" "bo to" "mg mg" "tm bm" "eg eg" "be te";
 }
 
 .rubriker_stratergier {
@@ -375,6 +375,22 @@ header {
 .hitta_oss_text{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#social_medias {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social_medias {
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.social_media_logo {
+    height: 10vh;
+    width: auto;
 }
 
 @media screen and (min-width: 800px) {
