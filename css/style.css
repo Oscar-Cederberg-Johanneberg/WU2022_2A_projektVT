@@ -260,10 +260,10 @@ header {
 }
 
 #center_strategier{
-        grid-area: ss;
-        display: flex;
-        justify-content: center;
-    }
+    grid-area: ss;
+    display: flex;
+    justify-content: center;
+}
 
 #strategier_wrapper {
     display: grid;
@@ -313,9 +313,17 @@ header {
 }
 
 #text_mid {
+    display: none;
     grid-area: tm;
     margin-bottom: 1.25rem;
     background-color: #47646f;
+}
+
+#text_mid_small{
+    display: block;
+    grid-area: tm;
+    margin-bottom: 1.25rem;
+    background-color: #47646f; 
 }
 
 #end_game {
@@ -538,6 +546,7 @@ header {
         margin-bottom: 0.625rem;
         margin-top: 0.3125rem;
     }
+
     .center_the_pieces_wrapper {
         display: flex;
         justify-content: center;
@@ -554,6 +563,14 @@ header {
 
     #openings {
         grid-area: op;
+    }
+
+    #text_mid {
+        display: block;
+    }
+
+    #text_mid_small{
+        display: none;
     }
 
     #om_oss_section{
