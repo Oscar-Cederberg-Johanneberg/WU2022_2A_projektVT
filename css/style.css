@@ -45,11 +45,10 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     background-color: #1e383c;
     position: absolute;
-    right: 0px;
-    top: -90vh;
+    top: -80vh;
     width: 200px;
     list-style: none;
     transition: all 0.5s;
@@ -107,7 +106,7 @@ nav {
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 200px;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 20vh 1fr;
     grid-template-areas: "he na" "ss ss";
 }
 
@@ -289,7 +288,7 @@ header {
 }
 
 .strategier_bilder {
-    height: 24vw;
+    height: 20vw;
     width: auto;
     margin-bottom: 1.25rem;
 }
@@ -361,26 +360,22 @@ header {
     width: 80vw;
 }
 
-.historia_text {
-    margin-bottom: 2.5rem;
+.om_oss_titel{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .om_oss_text{
-    margin-top: 2rem;
     margin-right: 4rem;
     margin-left: 4rem;
     text-align: center;
-}
-
-.hitta_oss_text{
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 #social_medias {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 1rem;
 }
 
 .social_medias {
