@@ -384,7 +384,7 @@ header {
     
 }
 .social_media_logo {
-    height: 10vh;
+    height: 8vh;
     width: auto;
 }
 
@@ -398,54 +398,36 @@ header {
         display: none;
     }
     #grid_wrapper {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 100px 1fr;
-        grid-template-areas: 
-        "he"  
-        "ss";
     }
+
     #nav-links {
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
         height: 80px;
         background-color: #1e383c;
-        position: absolute;
         top: 100px;
         width: 100vw;
     }
 
     #start_section{
-        display: flex;
-        flex-direction: column; 
-        align-items:center;
-        justify-content: space-evenly;
         width: 80vw;
         margin-top: 6.25rem;
     }
 
     .start_text{
-        margin-top: 2rem;
         margin-right: 8rem;
         margin-left: 8rem;
-        text-align: center;
-    }
-
-    .start_text2 {
-        margin-bottom: 2.5rem;
     }
 
     #img_startsida {
         margin-top: 1.25rem;
         width: 70vw;
-        height: auto;
     }
     .nav-active {
         transform: none;
     }
     #pieces_wrapper {
-        display: grid;
         width: 80vw;
         margin-top: 5rem;
         margin-bottom: 1.25rem;
@@ -455,38 +437,32 @@ header {
     }
 
     #king_bild {
-        grid-area: kb;
         margin-bottom: 0.3125rem;
     }
     
     #king_text {
-        grid-area: kt;
         margin-right: 0.3125rem;
         margin-bottom: 0.3125rem;
     }
 
     #queen_bild {
-        grid-area: qb;
         margin-left: 0.3125rem;
         margin-bottom: 0.3125rem;
         margin-top: 0rem;
     }
     
     #queen_text {
-        grid-area: qt;
         margin-bottom: 0.3125rem;
         margin-top: 0rem;
     }
 
     #rook_bild {
-        grid-area: rb;
         background-color: #47646f;
         margin-bottom: 0.3125rem;
         margin-top: 0.3125rem;
     }
     
     #rook_text {
-        grid-area: rt;
         background-color: #47646f;
         margin-right: 0.3125rem;
         margin-bottom: 0.3125rem;
@@ -494,7 +470,6 @@ header {
     }
     
     #bishop_bild {
-        grid-area: bb;
         background-color: #788c96;
         margin-left: 0.3125rem;
         margin-bottom: 0.3125rem;
@@ -502,54 +477,39 @@ header {
     }
     
     #bishop_text {
-        grid-area: bt;
         background-color: #788c96;
         margin-bottom: 0.3125rem;
         margin-top: 0.3125rem;
     }
     
     #horse_bild {
-        grid-area: hb;
         margin-bottom: 0.625rem;
         margin-top: 0.3125rem;
     }
 
     #horse_text {
-        grid-area: ht;
         margin-right: 0.3125rem;
         margin-bottom: 0.625rem;
         margin-top: 0.3125rem;
     } 
 
     #pawn_bild {
-        grid-area: pb;
         margin-left: 0.3125rem;
         margin-bottom: 0.625rem;
         margin-top: 0.3125rem;
     }
     
     #pawn_text {
-        grid-area: pt;
         margin-bottom: 0.625rem;
         margin-top: 0.3125rem;
     }
-
-    .center_the_pieces_wrapper {
-        display: flex;
-        justify-content: center;
-    }
     
     #strategier_wrapper {
-        display: grid;
         width: 80vw;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 80px 500px 80px 500px 80px 500px;
         grid-template-areas: "op op" "bo to" "mg mg" "bm tm" "eg eg" "be te";
         margin-top: 6.25rem;
-    }
-
-    #openings {
-        grid-area: op;
     }
 
     #om_oss_section{
@@ -562,20 +522,10 @@ header {
         width: 70vw;
         height: auto;
     }
-
-    .om_oss_text{
-    margin-right: 8rem;
-    margin-left: 8rem;
-    }
-
 }
 
 @media screen and (min-width: 1100px){
     #img_startsida {
-        width: 770px;
-    }
-
-    #img_om_oss{
         width: 770px;
     }
 }
